@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #22223B;
+}
+
+.dictionary {
+    position: absolute;
+    background-color: white;
+    margin: auto;
+    width: 32rem;
+    height: 55vh;
+    top: 0;
+    bottom: 20em;
+    left: 0;
+    right: 0;
+    border-radius: 3rem;
+}
+
+.dictionary h1 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to top, #2c62c7, #b3178e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.dictionary h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 60%; /* Change this to whatever width you want. */
+    padding: 3px; /* This creates some space between the element and the border. */
+    border-bottom: 1.5px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+form {
+    position: absolute;
+    width: 30rem;
+    margin-top: 15%;
+    margin-left: 1em;
+}
+
+form fieldset {
+    height: 30vh;
+}
+
+form legend {
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    text-shadow: 1rem 1rem 1rem 1rem white;
+}
+
+form input {
+    width: 15rem;
+    margin-left: 24%;
+    margin-top: 4%;
+    padding: 1em;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #85FFC7;
+    box-shadow: 0 0.2rem 1rem 0 #85FFC7;
+    font-size: 1rem;
+}
+
+form span {
+    position: relative;
+    right: 2em;
+    color: grey;
+}
+
+form h2 {
+    margin-top: 1em;
+}
+
+form h2:after {
+    content: '';
+    display: block;
+    width: 30%;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2em;
+}
+
+form li {
+    padding-top: 0.7em;
+    margin-left: 1.1em;
+}
